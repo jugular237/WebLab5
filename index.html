@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="lab5.css" />
+    <script src="lab5.js"></script>
+    <meta charset="utf-8"/>
+  </head>
+  <body onload="setAlign()">
+    <div id="rightDiv2">
+      <h2 id = "topHeader">Heading</h2>
+      <div id = "div1InDiv2" onmouseover="rightAlign2()">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex animi incidunt assumenda ipsam! Error iste earum porro impedit et dolor.
+        <a onclick="enableForm('formDiv2')">5 task(click on me)</a><br>
+        <form id = "formDiv2">
+          <label id = "formDiv2Label">Input text for list here:</label><br>
+          <input type="text" id="list2Info">
+          <input type="button" value="Add" id = "list2Add" onclick="makeList('list2Info', 'div2List')">
+          <input type="button" value="Save" id = "list2Save" onclick="saveListToLS('div2List')"><br>
+          <input type="button" value="Remove List" id = "list2Remove" onclick="removeList('div2List')"><br>
+        </form>
+        <ul id = "div2List"></ul>
+      </div>
+      <ul id="menulist">
+        <li><input type = "button" onclick = "changeText()" value = "change texts"></li>
+        <li><input type = "button" onclick = "ellipseArea()" value = "get area of ellipse"></li>
+      </ul>
+    </div>
+    <div id ="rightDiv3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eligendi illum, placeat veritatis quo corrupti atque, id totam reprehenderit ea maxime quod laboriosam! Est accusantium nihil laboriosam ea magni rerum nemo maxime iste explicabo dolor vero doloribus, illo voluptas adipisci soluta unde impedit voluptate, totam iusto laborum expedita fugit tempora.
+      <form id = "naturalNForm">
+        <label for="number" id = "formLabel">Input number here:</label><br>
+        <input type="number" onclick = "calculateDividers()" id="naturalNumber" name="N"><br>
+        <input type="submit" value="Submit" id = "conf"><br>
+        <label for="block1"> 1 block right align</label>
+        <input type="checkbox" onclick="rightAlignSave()" id="block1Box" value="box1V"><br>
+        <label for="block2"> 2 block right align</label>
+        <input type="checkbox" onclick="rightAlignSave()" id="block2Box" value="box2V">
+    </form>
+    <a onclick="enableForm('formDiv3')">5 task(click on me)</a><br>
+        <form id = "formDiv3">
+          <label id = "formDiv3Label">Input text for list here:</label><br>
+          <input type="text" id="list3Info">
+          <input type="button" value="Add" id = "list3Add" onclick="makeList('list3Info', 'div3List')">
+          <input type="button" value="Save" id = "list3Save" onclick="saveListToLS('div3List')"><br>
+          <input type="button" value="Remove List" id = "list3Remove" onclick="removeList('div3List')"><br>
+        </form>
+        <ul id = "div3List"></ul>
+    </div>
+    
+    <div id="leftDiv1" onmouseover="rightAlign1()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laudantium enim nam voluptatum. Nesciunt repudiandae inventore tenetur suscipit iusto odio excepturi fugit voluptatum minima quo autem natus deserunt, beatae quibusdam placeat dolorum corrupti consequatur veniam. Maiores blanditiis corporis, quisquam labore quas soluta eligendi, nihil laudantium doloribus tenetur perspiciatis esse architecto, fuga officia tempore ab? Eos sint, ipsum nobis necessitatibus, non quidem pariatur vitae vel alias repellat molestiae, nam quae suscipit blanditiis labore ut ullam est hic sunt ducimus recusandae delectus. Vero voluptas sed ab voluptatibus minus atque provident! Amet officia laboriosam iure blanditiis dolorem obcaecati dolorum harum tempore consequuntur eligendi?
+      <br>
+      <a onclick="enableForm('formDiv1')">5 task(click on me)</a><br>
+        <form id = "formDiv1">
+          <label id = "formDiv1Label">Input text for list here:</label><br>
+          <input type="text" id="list1Info">
+          <input type="button" value="Add" id = "list1Add" onclick="makeList('list1Info', 'div1List')">
+          <input type="button" value="Save" id = "list1Save" onclick="saveListToLS('div1List')"><br>
+          <input type="button" value="Remove List" id = "list1Remove" onclick="removeList('div1List')"><br>
+        </form>
+        <ul id = "div1List"></ul>
+    </div>   
+<div id = "whiteBlock"></div>
+  <div id="leftDiv4">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est esse debitis laborum sequi aperiam ex optio, facere at. Magni voluptas beatae fuga debitis non. Debitis hic sequi pariatur maxime, veritatis saepe excepturi eum dolorum obcaecati doloremque, qui fugit vitae doloribus aperiam eos! Repellendus nemo illo itaque quas explicabo neque ipsam!<br>
+    <a onclick="enableForm('formDiv4')">5 task(click on me)</a><br>
+        <form id = "formDiv4">
+          <label id = "formDiv4Label">Input text for list here:</label><br>
+          <input type="text" id="list4Info">
+          <input type="button" value="Add" id = "list4Add" onclick="makeList('list4Info', 'div4List')">
+          <input type="button" value="Save" id = "list4Save" onclick="saveListToLS('div4List')"><br>
+          <input type="button" value="Remove List" id = "list4Remove" onclick="removeList('div4List')"><br>
+        </form>
+        <ul id = "div4List"></ul>
+  </div>
+  <div id="rightDiv5">
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aut. Eaque voluptatum fugiat quia in fuga perferendis deleniti totam odit!
+    <br>
+    <a onclick="enableForm('formDiv5')">5 task(click on me)</a><br>
+        <form id = "formDiv5">
+          <label id = "formDiv5Label">Input text for list here:</label><br>
+          <input type="text" id="list5Info">
+          <input type="button" value="Add" id = "list5Add" onclick="makeList('list5Info', 'div5List')">
+          <input type="button" value="Save" id = "list5Save" onclick="saveListToLS('div5List')"><br>
+          <input type="button" value="Remove List" id = "list5Remove" onclick="removeList('div5List')"><br>
+        </form>
+        <ul id = "div5List"></ul>
+    </div>
+    <h2 id = "bottomHeader">Footer</h2>
+  </div>
+  </body>
+</html>
+
+
